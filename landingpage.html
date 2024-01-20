@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery Store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; 
+            color: #495057;
+        }
+
+        header {
+            background-color: #343a40; 
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #212529;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fbfbfe; 
+        }
+        h2 {
+            color: #0e0e0e; 
+        }
+
+        p {
+            color: #495057;
+            font-size: 1.2em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1em 2em;
+            background-color: #343a40; 
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #212529; 
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 35px;
+            margin-top: 2em;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 210px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 1em;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            color: #343a40; 
+        }
+
+        .product-price {
+            color: #495057; 
+            font-weight: bold;
+            margin-top: 0.5em;
+        }
+
+        .about-section {
+            background-color: #ffffff;
+            padding: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stationary supplies</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section>
+        <h2> Stationery at Your Fingertips </h2>
+        <p>Explore our wide range of high-quality stationery supplies to enhance your productivity and creativity.</p>
+        <a href="#" class="cta-button">Shop Now</a>
+    </section>
+
+    <div class="product-container">
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\pen.jpg" alt="Pen" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">Premium Ballpoint Pen</h2>
+                <p class="product-price">Rs.5.79</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\note.jpg" alt="Notebook" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">Eco-Friendly Notebook</h2>
+                <p class="product-price">Rs.30.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\download.jpg" alt="Highlighter" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">Assorted Highlighter Set</h2>
+                <p class="product-price">Rs.59.00</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\sisscors.jpg" alt="scissors" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">All purpose craft Scissors</h2>
+                <p class="product-price">Rs.89.99</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\blender.jpg" alt="Blender" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">Pastel/Pencil blending Set</h2>
+                <p class="product-price">Rs.100.25</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\paperclip.jpg" alt="clips" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">Set of 32 Assorted paper clips</h2>
+                <p class="product-price">Rs.140.00</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\marker.jpg" alt="Watercolourmarkers" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">Set of 12 Watercolour Dual tip Markers</h2>
+                <p class="product-price">Rs.134.99</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\brush pen.jpg" alt="brushpen" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">Tombow dual tip brush pen for calligraphy-green</h2>
+                <p class="product-price">Rs.126.99</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\oilpastels.jpg" alt="oilpastels" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">  Camlin Pack of 50 oilpastels</h2>
+                <p class="product-price">Rs.314.99</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\300paper.jpg" alt="300paper" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">300gsm watercolour papers for watercolouring A3</h2>
+                <p class="product-price">Rs.104.99</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\paper.jpg" alt="paperplane" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">8 by 8 inch paerplane Design sheets for Scrapbooking</h2>
+                <p class="product-price">Rs.218.99</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="C:\Users\HOME\Downloads\tape.jpg" alt="tape" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">Ultra-Thin double sided tape</h2>
+                <p class="product-price">Rs.149.99</p>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to our stationery store, where we offer a variety of high-quality products to meet your creative needs. Our mission is to provide excellent stationery that inspires and enhances your artistic journey.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Stationery Store</p>
+    </footer>
+</body>
+</html>
+
